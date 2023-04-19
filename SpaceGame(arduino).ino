@@ -566,10 +566,7 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-  pinMode(buzzer, OUTPUT);
-
-  //pinMode(A3, INPUT);
- 
+  pinMode(buzzer, OUTPUT); 
   pinMode (LATCH, OUTPUT);
   pinMode(DATA, OUTPUT);
   pinMode(CLK, OUTPUT);
@@ -582,4 +579,3 @@ void loop() {
  firstScreen();
 
 }
-  // put your main code here, to run repeatedly:
