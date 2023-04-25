@@ -159,7 +159,7 @@ void printMatrix(int rows, int cols, int** matrix, Plane* plane)
 }
 
 
-void passedEnemy(int rows, int cols, int** matrix, Plane* plane)
+void enemyPassed(int rows, int cols, int** matrix, Plane* plane)
 {
         for (int i = 0; i < cols; i++)
         {
@@ -349,7 +349,7 @@ void createObj(int** matrix, int rows, int cols, Plane* plane, std::vector<Bulle
 		matrix[bullets->at(i).x_loc - 1][bullets->at(i).y_loc] = 0;
 	}
 	
-  passedEnemy(rows, cols, matrix, plane);
+  enemyPassed(rows, cols, matrix, plane);
 
 	for (int i = 0; i < rows - 1; i++)
 	{
