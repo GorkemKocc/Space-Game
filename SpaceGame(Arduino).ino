@@ -308,7 +308,8 @@ void createObj(int** matrix, int rows, int cols, Plane* plane, std::vector<Bulle
 		if (bullets->at(i).x_loc == rows)
 		{
 			bullets->erase(bullets->begin() + i);
-			break;
+			i--;
+			continue;
 		}
 		if (matrix[bullets->at(i).x_loc + 1][bullets->at(i).y_loc] == 1 || matrix[bullets->at(i).x_loc + 1][bullets->at(i).y_loc] == 2)
 		{
